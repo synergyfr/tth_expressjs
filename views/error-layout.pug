@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title Flash Cards
+    link(rel="stylesheet", href="/static/stylesheets/style.css")
+  body
+    include includes/header.pug
+    section.desk
+        h1= `${error.message} - Status: ${error.status}`
+        img(src='/static/img/desk.svg',class='desk-items')
+        a(class='button-primary-small',href='/hello') Go Home
+        .paper
+            block content
+        .tear
+    include includes/footer.pug

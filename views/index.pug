@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-	section#content
-		h2 Welcome, #{name}!
-	form(action='/goodbye',method='post')
-		input(type="submit",value="goodbye")
+  section.namecard
+
+    h1.namecard-prompt Let's get started
+    a.namecard-submit(href='/cards') Begin!
